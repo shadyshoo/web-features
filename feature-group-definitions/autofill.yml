@@ -1,0 +1,4 @@
+name: ":autofill"
+spec: https://html.spec.whatwg.org/multipage/semantics-other.html#selector-autofill
+compat_features:
+  - css.selectors.autofill
