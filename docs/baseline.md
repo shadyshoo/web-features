@@ -1,4 +1,4 @@
-## Baseline
+# Baseline
 
 This document describes what Baseline intends to do and specifies how features are to receive a Baseline status.
 
@@ -29,7 +29,7 @@ See [Audience illustration for Baseline status](#audience-illustration-for-basel
 
 Goal 2: **Change with the web and web developers’ needs.**
 Features can and should join and leave Baseline status as their respective interoperability, reliability, commitment, and availability profiles change.
-Likewise, Baseline statuses should change as developers’ needs change (for example, developers come to rely on a new browser or an established browser fades from use).
+Likewise, Baseline statuses should change as developers’ needs change. For example, if developers come to rely on a new browser or an established browser fades from use.
 Baseline is not an inert, one-time assessment, nor is it arbitrary, changing form from one day to the next.
 
 Goal 3: **Identify interoperability through support across browser implementations.**
@@ -59,6 +59,9 @@ Baseline status cannot or will not satisfy the following non-goals:
   Many Baseline features will not achieve 100% user reach soon or perhaps ever.
   If a web developer needs to support a globally uncommon or discontinued browser (e.g., Internet Explorer 11), then the developer needs to know the specific limitations of that browser, not a broad overview of developers’ most commonly required browsers.
   Baseline can’t be both.
+* **Identify support in assistive technology.**
+  Baseline does not cover support for screen readers, screen magnifiers, voice control, and other assistive technology that is not built into browsers.
+  See also: [Future considerations](#future-considerations).
 * **Identify support in non-web environments.**
   Developers use web technologies in non-web settings, such as JavaScript in Node.js, Web APIs in Deno, or HTML and CSS in Electron-based applications.
   For good reasons, web technologies in non-web settings often depart from interoperability with web browsers.
@@ -118,7 +121,7 @@ This is but one of several possible stories to help keep in mind the needs and c
 The WebDX community group, through the [web-platform-dx/web-features-set owners group](../GOVERNANCE.md), maintains this document.
 Based on WebDX community group research, the web-features owners group decides matters such as the core browser set, releases, editorial overrides, and so on.
 
-The status definition is due for review by the governance group on 7 November 2024.
+The status definition is due for review by the owners group on 1 June 2025.
 
 ## Status definition
 
@@ -137,7 +140,7 @@ For each feature definition in `web-features`, an interoperable status shall be 
 2. The feature definition does not have a value set indicating that:
 
    - The specification text contains discouraging language, such as a deprecation notice, obsolescence warning, or legacy tag.
-   - The governance group is withholding or modifying the status (i.e., there is no editorial override of the feature’s status).
+   - The owners group is withholding or modifying the status (i.e., there is no editorial override of the feature’s status).
 
 If the feature has the interoperable status, then the feature’s _keystone date_ shall be set to the last release date on which a browser introduced support for the feature
 If there was more than one introduction (e.g., a feature was withdrawn then reintroduced), then only the latest date applies.
@@ -150,7 +153,7 @@ The feature’s keystone date is on or before today’s date minus 30 months and
 
 * Mozilla Firefox ESR, given by the release date for the latest x.0 release of Firefox ESR (or the previous x.0 release, when there are two active ESR releases).
 
-This duration is selected to approximate developer signals, estimates of browser release uptake over time, an estimate of high total market share support, and the project governance group’s best judgment.
+This duration is selected to approximate developer signals, estimates of browser release uptake over time, an estimate of high total market share support, and the project owners group’s best judgment.
 
 ### Core browser set
 
@@ -165,6 +168,15 @@ The _core browser set_ shall be defined as:
 * Mozilla Firefox (Android)
 * Mozilla Firefox (desktop)
 
+> [!NOTE]
+> How Baseline statuses change based on the introduction of a new browser to the existing core browser set is not yet defined.
+> If you need this to adopt Baseline in your tool or process, file an issue describing your use case.
+> See issue [#2133](https://github.com/web-platform-dx/web-features/issues/2133) for further discussion.
+
+> [!NOTE]
+> Baseline status before the release of Edge 12 (the first release of the newest browser in the core browser set) is not defined.
+> If you need Baseline statuses for 2014 or earlier, file an issue describing your use case.
+
 ## Future considerations
 
 There are many things Baseline does not cover.
@@ -176,5 +188,6 @@ Here are some areas for future consideration and not currently in-scope for Base
 * Progressive enhancement safe (i.e., limited penalties for support failures)
 * Developer feedback requested
 * Buggy (e.g., supported but in ways that are surprising and semi-interoperable)
+* Support in assistive technology that is not built into browsers.
 * Obsolete/deprecated/legacy/etc. (i.e., flagged as such in the specification or dropped from newer versions of the specification)
 * Having high-quality polyfills available

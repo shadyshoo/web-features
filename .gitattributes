@@ -1,0 +1,2 @@
+features/*.yml linguist-detectable
+features/*.yml.dist linguist-language=YAML

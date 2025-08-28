@@ -1,0 +1,12 @@
+name: AudioWorklet
+description: The `AudioWorklet` API runs module code in a separate thread, specifically for non-blocking, low latency audio processing.
+spec: https://webaudio.github.io/web-audio-api/#AudioWorklet
+group:
+  - web-audio
+  - workers
+status:
+  compute_from:
+    - api.AudioWorklet
+    - api.AudioWorkletNode.AudioWorkletNode
+    - api.AudioWorkletProcessor
+    - api.BaseAudioContext.audioWorklet

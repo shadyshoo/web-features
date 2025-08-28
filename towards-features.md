@@ -1,3 +1,6 @@
+> [!Note]
+> **This document should be seen as historical**. It was put together in 2022, when the web-features project started, to inform initial development discussions. The web-features project has made significant progress towards establishing a common list of web features since then. Learnings from this work have not been reflected back in this document.
+
 # Towards a common list of web features
 
 ## Abstract
@@ -113,6 +116,6 @@ The [browser-statuses](https://github.com/w3c/browser-statuses#web-browser-imple
 - It contains a (manual) mechanism to select representative entries in platform status projects to compute rough implementation support for a feature or a specification.
 - It contains code to actually compute a rough implementation support score from data in platform status projects
 
-Among the things that may need to be revisited: the browser-statuses project does not yet try to be a comprehensive list of features. Also, brower-statuses only includes features that are always defined within a specification and does not yet let one group features into higher-level ones.
+Among the things that may need to be revisited: the browser-statuses project does not yet try to be a comprehensive list of features. Also, browser-statuses only includes features that are always defined within a specification and does not yet let one group features into higher-level ones.
 
 Regardless of the starting point, what is needed is a coordination effort between status platforms to converge on a shared vision for features, agree on a common mechanism to add new ones, and identify contributors and maintainers.

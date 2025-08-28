@@ -1,0 +1,16 @@
+name: '<input type="color">'
+description: The `<input type="color">` HTML element shows a color picker from which users can choose a color value.
+spec: https://html.spec.whatwg.org/multipage/input.html#color-state-(type=color)
+group:
+  - forms
+  - html-elements
+caniuse: input-color
+status:
+  compute_from:
+    - html.elements.input.type_color
+compat_features:
+  - api.HTMLInputElement.alpha
+  - api.HTMLInputElement.colorSpace
+  - html.elements.input.alpha
+  - html.elements.input.colorspace
+  - html.elements.input.type_color
